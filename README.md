@@ -22,7 +22,7 @@ El proyecto utiliza una arquitectura basada en eventos (event-driven) compuesta 
 
 ## Despliegue
 
-1. Crea una función en AWS Lambda utilizando el runtime de Python 3.12.
+1. Crea una función en AWS Lambda utilizando el runtime de Python 3.15.
 2. Sube el código del archivo `lambda_function.py`.
 3. En la configuración general de Lambda, ajusta el Timeout a 15 segundos y la memoria a 256 MB para optimizar el tiempo de ejecución.
 4. Crea una regla en Amazon EventBridge (tipo Schedule) con la siguiente expresión cron: `cron(0 19 ? * MON-FRI *)`.
